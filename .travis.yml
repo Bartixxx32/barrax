@@ -1,0 +1,14 @@
+language: python
+python:
+  - "3.5.2"
+install:
+  - git clone https://github.com/Cog-Creators/Red-DiscordBot.git
+  - cd Red-DiscordBot
+  - pip install -r requirements.txt
+script:
+  - python -m compileall ./red.py
+  - python -m compileall ./cogs
+  - python ./red.py --no-prompt --no-cogs --dry-run
+cache: pip
+notifications:
+  email: false
