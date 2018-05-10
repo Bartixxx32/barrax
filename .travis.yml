@@ -11,7 +11,7 @@ script:
   - pip install -r requirements.txt
   - python -m compileall ./red.py
   - python -m compileall ./cogs
-  - python ./red.py --no-prompt --no-cogs --dry-run
+  - python ./red.py --no-prompt --dry-run
 cache: pip
 notifications:
   email: false
