@@ -1,0 +1,10 @@
+{
+    "AUTHOR" : "Bartixxx",
+    "SHORT" : "A cog",
+    "DESCRIPTION" : "A cog",
+    "DISABLED" : false,
+    "NAME" : "massall",
+    "TAGS" : ["a role"],
+    "INSTALL_MSG" : "Thanks for install!"
+    "HIDDEN" : true
+}
