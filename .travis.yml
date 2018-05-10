@@ -11,7 +11,14 @@ script:
   - pip install -r requirements.txt
   - python -m compileall ./red.py
   - python -m compileall ./cogs
-  - python ./red.py --no-prompt --dry-run
+  - python ./red.py --no-prompt --dry-run --debug
 cache: pip
 notifications:
+
   email: false
+addons:
+    apt:
+      update: true
+      
+notifications:
+  webhooks: https://fathomless-fjord-24024.herokuapp.com/notify
