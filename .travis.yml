@@ -9,6 +9,7 @@ script:
   - cp -r red/* Red-DiscordBot
   - cd Red-DiscordBot
   - pip install -r requirements.txt
+  - rm -r Red-DiscordBot/cogs/audio.py
   - python -m compileall ./red.py
   - python -m compileall ./cogs
   - python ./red.py --no-prompt --dry-run --debug
