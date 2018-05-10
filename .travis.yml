@@ -5,7 +5,8 @@ script:
   - mkdir Red-DiscordBot
   - mkdir Red-DiscordBot/cogs
   - find ./ -name '*.py' -exec cp -prv '{}' 'Red-DiscordBot/cogs' ';'
-  - git clone https://github.com/Cog-Creators/Red-DiscordBot.git
+  - git clone https://github.com/Cog-Creators/Red-DiscordBot.git red
+  - cp -r red/* Red-DiscordBot
   - cd Red-DiscordBot
   - pip install -r requirements.txt
   - python -m compileall ./red.py
