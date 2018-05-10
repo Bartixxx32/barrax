@@ -1,8 +1,8 @@
 import discord
 from discord.ext import commands
 
-class Mycog:
-    """My custom cog that does stuff!"""
+class Barrax:
+    """Barrax cog"""
 
     def __init__(self, bot):
         self.bot = bot
@@ -16,4 +16,4 @@ class Mycog:
         await self.bot.say("User want to leave from this server :C")
         await self.bot.say(ctx.message.author)
 def setup(bot):
-    bot.add_cog(Mycog(bot))
+    bot.add_cog(Barrax(bot))

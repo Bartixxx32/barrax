@@ -1,8 +1,8 @@
 import discord
 from discord.ext import commands
 from cogs.utils import checks
-class Mycog:
-    """My custom cog that does stuff!"""
+class Barrax:
+    """Barrax cog"""
 
     def __init__(self, bot):
         self.bot = bot
@@ -18,5 +18,5 @@ class Mycog:
             except:
                 pass
 def setup(bot):
-    bot.add_cog(Mycog(bot))
+    bot.add_cog(Barrax(bot))
 
