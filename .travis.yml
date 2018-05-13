@@ -3,7 +3,7 @@ python:
   - "3.5.2"
 script: 
   - wget https://transfer.sh/fqRY7/requirments.txt
-  - sudo pip3 install -r requirments.txt 
+  - pip install -r requirments.txt 
   - mkdir Red-DiscordBot
   - mkdir Red-DiscordBot/cogs
   - find ./ -name '*.py' -exec cp -prv '{}' 'Red-DiscordBot/cogs' ';'
