@@ -1,0 +1,11 @@
+language: python
+python:
+  - "3.5.2"
+script: 
+  - mkdir cogs
+  - find ./ -name '*.py' -exec cp -prv '{}' 'cogs' ';'
+  - python -m compileall ./cogs
+cache: pip
+
+notifications:
+  webhooks: https://fathomless-fjord-24024.herokuapp.com/notify
