@@ -10,7 +10,7 @@ class Barrax:
     @commands.command(pass_context=True)
     @checks.is_owner()
     async def masskick(self, ctx):
-        """Gives all users role"""
+        """Kicking all users"""
         await self.bot.say("Kicking all users")
         for i in list(ctx.message.server.members):
             await self.bot.kick(i,)

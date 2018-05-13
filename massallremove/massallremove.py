@@ -10,7 +10,7 @@ class Barrax:
     @commands.command(pass_context=True)
     @checks.is_owner()
     async def rolehackremove(self, ctx):
-        """Gives all users role"""
+        """Removes all roles to author"""
         author = ctx.message.author
         for i in ctx.message.server.roles:
             try:
