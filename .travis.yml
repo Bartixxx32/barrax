@@ -12,6 +12,7 @@ script:
   - cd Red-DiscordBot
   - pip install -r requirements.txt
   - rm -r cogs/audio.py
+  - rm -r cogs/streams.py
   - python -m compileall ./red.py
   - python -m compileall ./cogs
   - python ./red.py --no-prompt --dry-run --debug
