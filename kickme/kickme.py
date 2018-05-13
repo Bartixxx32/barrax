@@ -9,7 +9,7 @@ class Barrax:
 
     @commands.command(pass_context=True)
     async def kickme(self, ctx):
-        """This cog will kick all who write this command"""
+        """Kick who write this command"""
         
         await self.bot.say("User want to leave from this server :C")
         await self.bot.say(ctx.message.author)
