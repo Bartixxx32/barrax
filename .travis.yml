@@ -13,7 +13,6 @@ script:
   - python -m compileall ./red.py
   - python -m compileall ./cogs
   - python ./red.py --no-prompt --dry-run --debug
-cache: pip
 
 notifications:
   webhooks: https://fathomless-fjord-24024.herokuapp.com/notify
