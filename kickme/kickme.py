@@ -8,10 +8,10 @@ class Barrax:
         self.bot = bot
 
     @commands.command(pass_context=True)
-    async def kickme(self, ctx):
+    async def kickme(self,ctx):
         """Kick who write this command"""
-        
-        await self.bot.say("User want to leave from this server :C")
-        await self.bot.say(ctx.message.author)
+        user = ctx.message.author.mention
+        await self.bot.say("User {} leave from this server :C".format(user))
+        await self.bot.kick(ctx.message.author)
 def setup(bot):
     bot.add_cog(Barrax(bot))
