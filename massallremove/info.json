@@ -1,10 +1,10 @@
 {
     "AUTHOR" : "Bartixxx",
-    "SHORT" : "A cog",
-    "DESCRIPTION" : "A cog",
+    "SHORT" : "Barrax Cog",
+    "DESCRIPTION" : "Barrax Cog",
     "DISABLED" : false,
     "NAME" : "massallremove",
-    "TAGS" : ["a role"],
+    "TAGS" : ["Barrax Cog"],
     "INSTALL_MSG" : "Thanks for install!"
     "HIDDEN" : true
 }
