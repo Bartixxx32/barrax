@@ -10,10 +10,14 @@ class Barrax:
     @commands.command(pass_context=True)
     @checks.is_owner()
     async def massroleremove(self, ctx, role : discord.Role):
-        """Removes all users role"""
-        await self.bot.say("Removing all users given role")
-        for i in list(ctx.message.server.members):
-            await self.bot.remove_roles(i, role)
+        """Gives all users role"""
+        await self.bot.say("Gives all users given role")
+        for i in ctx.message.server.members:
+            try:
+                await self.bot.remove_roles(i, role)
+            except:
+                   await self.bot.say("error")
+
 def setup(bot):
     bot.add_cog(Barrax(bot))
 

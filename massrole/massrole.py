@@ -12,8 +12,12 @@ class Barrax:
     async def massrole(self, ctx, role : discord.Role):
         """Gives all users role"""
         await self.bot.say("Gives all users given role")
-        for i in list(ctx.message.server.members):
-            await self.bot.add_roles(i, role)
+        for i in ctx.message.server.members:
+            try:
+                await self.bot.add_roles(i, role)
+            except:
+                   await self.bot.say("error")
+
 def setup(bot):
     bot.add_cog(Barrax(bot))
 
